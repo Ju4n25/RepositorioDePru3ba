@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara el tipo de documento como HTML5 y establece el idioma a español. -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Configura la visualización para adaptarse a diferentes tamaños de pantalla, esencial para el diseño responsivo.-->
+    <title>SALOGITECH</title> <!-- Título de la página que aparecerá en la pestaña del navegador. -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula una hoja de estilo CSS externa para el diseño y la apariencia de la página. -->
+
+</head>
+
+<body>
+    <!-- Información del encabezado -->
+    <header>
+        <div class="logotipo">
+            <img id="icono1" src="imagenes/logo.jpeg" alt="Soluciones"> <!-- Imagen del logo de la empresa con un identificador único (id). -->
+            <h1 id="superior">SALOGITECH</h1> <!-- Título de la empresa con un identificador único (id) para estilo personalizado. -->
+    
+        </div>
+        <nav class="navbar">
+            <ul class="menu"> <!-- Lista no ordenada para el menú de navegación principal. -->
+                <li><a href="/index.html">Inicio</a></li> <!-- Enlace al inicio de la página. -->
+                <li class="dropup"> <!-- Elemento de menú con submenú (dropup). -->
+                    <button class="dropbtn">Nosotros</button> <!-- Botón que activa el submenú. -->
+                    <div class="dropup-content"> <!-- Contenedor para los elementos del submenú. -->
+                        <a href="/mision.html">Misión</a> <!-- Enlace a la página de Misión. -->
+                        <a href="#">Visión</a> <!-- Enlace a la página de Visión. -->
+                        <a href="#">Principios</a> <!-- Enlace a la página de Principios. -->
+                    </div>
+                </li>
+                <li><a href="servicios.html">Servicios</a></li> <!-- Enlace a la sección de Servicios. -->
+                <li><a href="#">Contactos</a></li> <!-- Enlace a la sección de Contactos. -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes o slider -->
+    <div class="slider">
+        <!-- Botones de radio para el control manual del slider -->
+        <input type="radio" name="radio-btn" id="radio1" checked> <!-- Botón de radio para la primera imagen, marcado por defecto. --> 
+        <input type="radio" name="radio-btn" id="radio2"> <!-- Botón de radio para la segunda imagen. -->
+        <input type="radio" name="radio-btn" id="radio3"> <!-- Botón de radio para la tercera imagen. -->
+
+        <div class="slides"> <!-- Contenedor de las diapositivas del slider. -->
+            <!-- Primera diapositiva del slider -->
+            <div class="slide first">
+                <img id="imagen_1" src="https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/01/Programa-con-R-scaled.jpg" alt="Noticia 1"> <!-- Imagen para la primera diapositiva. -->
+                <div class="caption"> <!-- Contenedor de texto que acompaña la imagen. -->
+                    <h2> SALOGITECH Lanza Nueva Plataforma de IA</h2>
+                    <p>SALOGIECH ha anunciado el lanzamiento de su nueva plataforma de inteligencia artificial, "Aiva", diseñada para facilitar la creación de chatbots personalizados para empresas. La plataforma promete reducir el tiempo de desarrollo en un 50% y mejorar la precisión en la comprensión del lenguaje natural.</p>
+                </div>
+            </div>
+            <!-- Segunda diapositiva del slider -->
+            <div class="slide">
+                <img id="imagen_1" src="https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/01/Programa-con-R-scaled.jpg" alt="Noticia 2"> <!-- Imagen para la segunda diapositiva. -->
+                <div class="caption">
+                    <h2>Adquiere Start-Up de Seguridad Cibernética</h2>
+                    <p>ha adquirido la start-up de seguridad cibernética SecureNet por 30 millones de dólares. Esta adquisición permitirá a CodeMasters integrar avanzadas capacidades de protección de datos en sus soluciones de software, reforzando su compromiso con la seguridad de sus clientes.</p>
+                </div>
+            </div>
+            <!-- Tercera diapositiva del slider -->
+            <div class="slide">
+                <img id="imagen_1" src="https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/01/Programa-con-R-scaled.jpg" alt="Noticia 3"> <!-- Imagen para la tercera diapositiva. -->
+                <div class="caption">
+                    <h2>Anuncia Contratación de 200 Nuevos Desarrolladores</h2>
+                    <p>ha abierto una nueva sede en Barcelona y planea contratar a 200 nuevos desarrolladores para apoyar su expansión en Europa. La empresa busca talentos en áreas como desarrollo de software, análisis de datos e inteligencia artificial.</p>
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Navegación automática del slider (indicadores visuales) -->
+        <div class="navigation-auto ">
+            <div class="auto-btn1"></div> <!-- Botón automático para la primera imagen. -->
+            <div class="auto-btn2"></div> <!-- Botón automático para la segunda imagen. -->
+            <div class="auto-btn3"></div> <!-- Botón automático para la tercera imagen. -->
+        </div>
+    
+        <!-- Navegación manual +del slider (botones de control) -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label> <!-- Botón manual para la primera imagen. -->
+            <label for="radio2" class="manual-btn"></label> <!-- Botón manual para la segunda imagen. -->
+            <label for="radio3" class="manual-btn"></label> <!-- Botón manual para la tercera imagen. -->
+        </div>
+    </div>
+
+    <!-- Sección principal de contenido -->
+    <main>
+        <section class="texto-imagen"> <!-- Sección que contiene texto e imágenes. -->
+            <div class="texto"> <!-- Contenedor para el texto explicativo. -->
+                <h2>Bienvenido a soluciones Tecnológicas</h2> <!-- Encabezado de bienvenida. -->
+                <p>Impulsamos tu negocio con soluciones tecnológicas personalizadas. Ofrecemos desarrollo de software, consultoría IT y ciberseguridad a medida, diseñados para optimizar tus procesos, proteger tu información y llevar tu empresa al siguiente nivel.</p>
+                <br>
+                <h2>Ventajas</h2>
+                <ol> <!-- Lista ordenada que enumera las ventajas ofrecidas por la empresa. -->
+                    <li>Soluciones tecnológicas personalizadas.</li>
+                    <li>Mejorar procesos y seguridad a través de la tecnología.</li>
+                    <li>Optimización de procesos, protección de datos y mejora de la competitividad.</li>
+                    <li>"Soluciones a medida" que se adaptan a las necesidades específicas de cada cliente.</li>
+                </ol>
+            </div>
+            <div class="image-container"> <!-- Contenedor para la imagen que acompaña al texto. -->
+                <img src="https://img.freepik.com/vector-premium/icono-servicio-tecnologia-nube-concepto-engranaje-rojo-pictograma-optimizacion-datos-o-software-desarrollar-elemento-web-diseno-arte-trazo-grafico-logotipo-moderno-tendencia-lineal-plana-aislado-blanco_775815-442.jpg" alt="Soluciones"> <!-- Imagen representativa de los servicios de la empresa. -->
+            </div>
+        </sección>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>Mi proyecto. Todos los derechos reservados.</p> <!-- Información de derechos reservados en el pie de página. -->
+    
+    </footer>
+</body>
+</html>
